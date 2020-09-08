@@ -1,12 +1,12 @@
-FROM openjdk:8-jre-alpine
+FROM balenalib/raspberry-pi-openjdk:8-stretch
 
-ENV TRACCAR_VERSION 4.8
+ENV TRACCAR_VERSION 4.10
 
 WORKDIR /opt/traccar
 
 RUN set -ex && \
     apk add --no-cache --no-progress wget && \
-    wget -qO /tmp/traccar.zip https://github.com/traccar/traccar/releases/download/v$TRACCAR_VERSION/traccar-other-$TRACCAR_VERSION.zip && \
+    wget -qO /tmp/traccar.zip https://github.com/traccar/traccar/releases/download/v$TRACCAR_VERSION/traccar-arm-$TRACCAR_VERSION.zip && \
     unzip -qo /tmp/traccar.zip -d /opt/traccar && \
     rm /tmp/traccar.zip && \
     apk del wget

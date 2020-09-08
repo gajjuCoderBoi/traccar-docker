@@ -1,6 +1,6 @@
-FROM openjdk:8-jre-slim
+FROM balenalib/raspberry-pi-openjdk:8-stretch
 
-ENV TRACCAR_VERSION 4.8
+ENV TRACCAR_VERSION 4.10
 
 WORKDIR /opt/traccar
 
@@ -15,4 +15,4 @@ RUN set -ex && \
 
 ENTRYPOINT ["java", "-Xms512m", "-Xmx512m", "-Djava.net.preferIPv4Stack=true"]
 
-CMD ["-jar", "tracker-server.jar", "conf/traccar.xml"]
+CMD ["java","-jar", "tracker-server.jar", "conf/traccar.xml"]

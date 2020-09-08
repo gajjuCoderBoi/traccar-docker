@@ -1,7 +1,7 @@
 Traccar in Docker
 ---
 
-Traccar GPS Tracking System in Docker image.
+Traccar GPS Tracking System in Docker image for raspberry pi Docker.
 
 Official website: <https://www.traccar.org>
 
