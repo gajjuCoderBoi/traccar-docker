@@ -6,8 +6,8 @@ Traccar GPS Tracking System in Docker image for raspberry pi Docker.
 Official website: <https://www.traccar.org>
 
 
-[![](https://images.microbadger.com/badges/version/traccar/traccar:4.10.svg)](https://microbadger.com/images/traccar/traccar:4.8)
-[![](https://images.microbadger.com/badges/image/traccar/traccar:4.10.svg)](https://microbadger.com/images/traccar/traccar:4.8)
+[![](https://images.microbadger.com/badges/version/traccar/traccar:4.11.svg)](https://microbadger.com/images/traccar/traccar:4.8)
+[![](https://images.microbadger.com/badges/image/traccar/traccar:4.11.svg)](https://microbadger.com/images/traccar/traccar:4.8)
 
 
 ### Container create example:
